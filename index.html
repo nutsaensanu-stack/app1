@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driver Assignment Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': { '50': '#eff6ff', '100': '#dbeafe', '200': '#bfdbfe', '300': '#93c5fd', '400': '#60a5fa', '500': '#3b82f6', '600': '#2563eb', '700': '#1d4ed8', '800': '#1e40af', '900': '#1e3a8a', '950': '#172554' },
+              'background': '#f8fafc',
+              'dark-background': '#020617',
+              'card': '#ffffff',
+              'dark-card': '#0f172a',
+              'text-primary': '#1e293b',
+              'dark-text-primary': '#f8fafc',
+              'text-secondary': '#64748b',
+              'dark-text-secondary': '#94a3b8',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Improved Toggle Switch */
+      .toggle-checkbox {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 0 0 2px transparent;
+      }
+      .toggle-checkbox:checked {
+        transform: translateX(1.5rem);
+        border-color: #2563eb; /* primary-600 */
+      }
+      .toggle-checkbox:checked + .toggle-label {
+        background-color: #2563eb; /* primary-600 */
+      }
+      .dark .toggle-checkbox:checked {
+        background-color: #3b82f6; /* primary-500 */
+      }
+      .dark .toggle-checkbox:checked + .toggle-label {
+        background-color: #3b82f6; /* primary-500 */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background dark:bg-dark-background">
+    <div id="root"></div>
+  </body>
+</html>

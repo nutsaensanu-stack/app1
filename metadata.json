@@ -1,0 +1,7 @@
+{
+  "name": "Driver Assignment Dashboard",
+  "description": "A comprehensive dashboard for managing driver assignments, pickup points, and schedules. Features include data management, reporting, CSV import/export, a map view, and dark mode.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
